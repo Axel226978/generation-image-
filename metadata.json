@@ -1,0 +1,7 @@
+{
+  "name": "NanoCreative Studio – Etsy Edition",
+  "description": "The ultimate AI-powered toolkit for professional Etsy sellers. Transform raw product photos into high-end lifestyle scenes using Gemini 2.5 Flash, and generate complete SEO-optimized listings including expert storytelling, technical specs (size, material), and fluid customer FAQs using Gemini 3 Pro.\n\n### Application FAQ\n\n**Comment cela améliore-t-il mes ventes Etsy ?**\nLes photos de style de vie et les descriptions optimisées SEO sont les leviers majeurs de conversion. Cet outil automatise ces deux aspects avec un niveau de qualité professionnel.\n\n**Quels modèles sont utilisés ?**\nGemini 2.5 Flash pour le rendu d'image rapide et fidèle, et Gemini 3 Pro pour l'analyse SEO profonde et la recherche web.\n\n**La recherche Google est-elle active ?**\nOui. Lors de la génération SEO, l'IA cherche activement sur le web (AliExpress, Amazon, etc.) pour trouver les specs réelles de votre produit s'il est identifiable.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
