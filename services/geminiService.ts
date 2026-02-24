@@ -105,13 +105,29 @@ export async function generateImage(
     identityInstruction += `SCENE: `;
   }
 
+  const ultraRealisticInstructions = `
+ULTRA-REALISM REQUIREMENTS (MANDATORY):
+- PHOTOREALISTIC quality, indistinguishable from real photography
+- Natural lighting ONLY: soft window light, golden hour sunlight, diffused daylight, warm indoor lighting
+- Real-world environment: authentic textures (wood grain, fabric weave, stone patterns, natural surfaces)
+- Organic imperfections: subtle shadows, natural color variations, realistic depth of field
+- Professional photography techniques: bokeh background blur, natural reflections, ambient occlusion
+- NO artificial/sterile backgrounds, NO perfect gradients, NO CGI look
+- Background must be a REAL PLACE: cozy home interior, rustic wooden table, natural outdoor setting, authentic lifestyle scene
+- Atmospheric depth: foreground sharp, background naturally blurred
+- Color grading: warm, natural tones, film-like quality
+- Lighting physics: realistic highlights, soft shadows, natural light falloff
+- Texture detail: visible material properties, tactile surfaces
+- 8K resolution, shot on professional camera (Canon EOS R5, Sony A7R IV quality)
+- AVOID: plastic look, overly saturated colors, artificial shine, perfect symmetry, digital artifacts`;
+
   if (referenceImages.length > 0) {
-    parts.push({ text: (identityInstruction + prompt + ". Hyper-realistic, professional lighting, natural environment, extremely detailed, 8k, realistic to death.").replace(/\*/g, '') });
+    parts.push({ text: (identityInstruction + prompt + ". " + ultraRealisticInstructions).replace(/\*/g, '') });
     referenceImages.forEach(img => {
       parts.push({ inlineData: { data: img.data, mimeType: img.mimeType } });
     });
   } else {
-    parts.push({ text: (prompt + ". Ultra-realistic professional photography.").replace(/\*/g, '') });
+    parts.push({ text: (prompt + ". " + ultraRealisticInstructions).replace(/\*/g, '') });
   }
 
   try {
