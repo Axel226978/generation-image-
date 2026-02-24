@@ -54,9 +54,9 @@ const RightPanel: React.FC<RightPanelProps> = ({ activeNav, generatedPrompts, on
       break;
     default:
       icon = (
-        <div className="text-6xl mb-6 opacity-20">🍌</div>
+        <div className="text-6xl mb-6 opacity-20">✨</div>
       );
-      title = "Studio Nano Banana";
+      title = "Studio Nano Agibita";
       subtitle = "Sélectionnez un outil pour commencer.";
   }
 

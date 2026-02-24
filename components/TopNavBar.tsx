@@ -25,8 +25,8 @@ const TopNavBar: React.FC<TopNavBarProps> = ({ activeNav, setActiveNav, isApiKey
   return (
     <nav className="bg-[#111318] p-4 mx-6 mt-6 rounded-[20px] shadow-lg flex items-center justify-between font-sans border border-gray-800">
       <div className="text-3xl font-black text-yellow-400 ml-4 flex items-center uppercase tracking-tighter">
-        <span role="img" aria-label="icon" className="mr-3 text-2xl">🍌</span>
-        Nano Banana
+        <span role="img" aria-label="icon" className="mr-3 text-2xl">✨</span>
+        Nano Agibita
       </div>
 
       <div className="flex space-x-2">
